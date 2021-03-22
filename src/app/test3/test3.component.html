@@ -1,0 +1,20 @@
+    <div class="col-12 mt-3">
+        <div class="form-floating" >
+            <textarea class="form-control" style="height:90px;padding:0px" placeholder="Leave a comment here" id="floatingTextarea" [(ngModel)]="str" ></textarea>
+          </div>
+    </div>
+
+<div class="col-12 mt-3 text-center">
+    <div class="p-1 d-inline">
+        <button type="button" class="btn btn-outline-primary " (click)="mergeRes(false)">Request</button>
+    </div>
+    <div class="ps-1 d-inline">
+        <button type="button" class="btn btn-outline-info" (click)="mergeRes(true)">Response</button>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <div class="alert alert-dark" role="alert">
+        <span *ngFor="let item of yyy" [innerHTML]="item"></span>
+    </div>
+  </div>
